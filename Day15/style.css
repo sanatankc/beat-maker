@@ -1,0 +1,124 @@
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --yellow: hsl(71, 73%, 54%);
+    --gray: hsl(204, 43%, 93%);
+    --blue: #E6EFF6;
+
+}
+*{
+    
+    box-sizing: border-box;
+}
+body{
+    background: var(--blue);
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    padding-bottom: 20px;
+    padding: 50px 0;
+    place-items: center;
+}
+.container{
+    display: grid;
+    width: 50%; height: max-content;
+    box-shadow: 0px 15px 30px rgba(0, 81, 171, 0.148847);
+    border-radius: 8px;
+    color: #fff;
+    background: #FFFFFF;
+
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "desc-heading desc-heading"
+                        "desc-price desc-text"
+}
+/* .container > *{
+    padding: 20px;
+
+} */
+.desc-header,.desc-price,.desc-text{
+    padding: 30px;
+}
+.desc-header{
+    grid-area: desc-heading;
+    
+}
+.desc-price{
+    grid-area: desc-price;
+    background:var(--cyan);
+
+}
+.desc-text{
+    grid-area: desc-text;
+    background:var(--cyan);
+    opacity: 0.85;
+}
+.desc-text p{
+    line-height: 22px;
+    opacity: 0.8;
+    width: 80%;
+
+}
+.sign-up-btn{
+    height: 58px;
+    display: grid;
+    background: var(--yellow);
+    place-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.2s ease;
+}
+.sign-up-btn:hover{
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+
+}
+.desc-header h3{
+    color: var(--cyan);
+    font-size: 24px;
+}
+.desc-header h4{
+    color: var(--yellow);
+    font-size: 18px;
+}
+.desc-header p{
+    color: #9AA7BE;
+    line-height: 26px;
+}
+h1{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+h1 span{
+    
+    opacity: 0.5;
+    font-weight: 400;
+}
+
+/* responsive */
+@media(max-width: 1000px){
+    .container{
+        width: 70%;
+        grid-template-columns: repeat(1,1fr);
+
+        grid-template-areas: "desc-heading"
+                            "desc-price"
+                            "desc-text"
+    }
+}
+@media(max-width: 600px){
+    .container{
+        width: 80%;
+        border-radius: 5px;
+    }
+    .desc-header h3{
+        font-size: 20px;
+    }
+    .desc-header h4{
+        font-size: 15px;
+    }
+    .desc-header p{
+        font-size: 14px;
+    }
+    
+
+}

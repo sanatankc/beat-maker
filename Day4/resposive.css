@@ -1,0 +1,40 @@
+@media(max-width: 1200px){
+    .cards{
+        width: 80vw;
+    }
+}
+@media(max-width: 950px){
+    .cards{
+        width: 95vw;
+    }
+}
+@media(max-width: 600px){
+    .card-4{
+        display: block;
+    }
+    .cards
+{
+    width: 60vw;
+    height: 90vh;
+}
+.card:nth-child(1){
+    border-radius: 5px  5px 0 0px;
+}
+
+.card:nth-child(3){
+    border-radius: 0px  0px 0 0px;
+}
+.card{
+    grid-template-rows: 90px 70px 120px 100px;
+    gap: 10px;
+    
+}
+    }
+@media(max-width: 400px){
+    .cards
+{
+    width: 80vw;
+    height: 90vh;
+}
+
+    }    

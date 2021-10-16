@@ -1,0 +1,37 @@
+
+@media(max-width: 700px){
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 84px 248px 1fr 40px;
+        grid-template-areas: "logo"
+        "img"
+        "desc";
+    }
+    .img-section{
+        width: 100%;
+    }
+    header h1{
+        justify-self: center;
+        text-align: center;
+        font-size: 40px;
+    }
+    .img-section{
+        background: url("./images/hero-mobile.jpg") no-repeat;
+        background-size: cover;
+
+    }
+    .desc-section{
+        background: url('./images/bg-pattern-desktop.svg') no-repeat;
+        background-size: cover;
+    }
+    .input-form{
+        justify-self: center;
+    }
+    .text-desc{
+        width: 100%;
+        text-align: center;
+    }
+    .input-container{
+        width: 100%;
+    }
+}

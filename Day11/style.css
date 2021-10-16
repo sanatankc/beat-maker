@@ -1,0 +1,124 @@
+:root{
+    --builder-top: #EA5454;
+    --supervisor-top: #44D3D2;
+    --calculator-top: #549EF2;
+    --karma-top: #FCAE4A;
+    --text-clr: #4D4F62;
+    
+
+
+}
+*{
+    box-sizing: border-box;
+    color: var(--text-clr);
+}
+h1{
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+.heading > *{
+    margin: 0;
+    /* width: 50%; */
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    display: grid;
+    gap: 40px;
+   justify-content: center;
+}
+
+/* desc */
+.heading{
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    gap: 1px;
+    padding-top:  2em;
+    grid-template-rows: repeat(3,auto);
+    height: fit-content;
+}
+.main-text{
+    font-weight: 600;
+}
+.main-title{
+    font-weight: 200;
+    font-size: 36px;
+    letter-spacing: 0.25px;
+}
+.main-desc{
+    font-weight: 400;
+    opacity: 0.5;
+    width: 55%;
+    font-size: 15px;
+    margin-top: 10px;
+
+}
+.four-section-container{
+    width: 80vw;
+    padding-bottom: 50px;
+    display: grid;
+    justify-self: center;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-areas: "sv tb cal"
+                        "sv kar cal";
+}
+.card{
+    display: grid;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    border-radius: 8px;
+    height: 250px;
+    padding: 1em;
+}
+.card-title{
+    font-weight: 600;
+    margin-top: 0;
+    font-size: 20px;
+}
+.card-desc{
+    opacity: 0.5;
+    font-size: 13px;
+}
+svg{
+justify-self: end;
+}
+/* border-top-style */
+
+.supervisor{
+    align-self: center;
+    grid-row: sv;
+    grid-column: sv;
+    border-top: var(--supervisor-top) 4px solid;
+}
+.builder{
+    grid-column: tb;
+
+    border-top: var(--builder-top) 4px solid;
+}
+.karma{
+    grid-row: tb;
+
+    grid-column: kar;
+    border-top: var(--karma-top) 4px solid;
+}
+.calculator{
+    align-self: center;
+    grid-row: cal;
+    grid-column: cal;
+    border-top: var(--calculator-top) 4px solid;
+}
+/* .bulb-light{
+   transform: scaleX(0); 
+   transform-origin: top;
+   transition: transform 0.2s;
+
+}
+
+.card:hover .bulb-light{
+    transform: scaleX(1);
+} */

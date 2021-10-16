@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif; 
+       width: 100vw;
+    height: 100vh;
+    
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    width: 70vw;
+    height: 60vh;
+    color: #fff;
+}
+.card{
+    position: relative;
+    padding: 20px;
+    grid-template-rows: 100px 80px 150px 99px;
+    display: grid;
+
+}
+
+.card:nth-child(1){
+    border-radius: 5px  0px 0 5px;
+
+    background: #E28625;
+
+    
+
+}
+.card:nth-child(2){
+    background: #006971;
+
+    
+}
+.card-4{
+    display: none;
+    height: 40px;
+}
+.card:nth-child(3){
+    background: #004140;
+    border-radius: 0px  5px 5px 0px;
+
+}
+img{
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.title h1{
+    font-size: 40px;
+    font-family: 'Big Shoulders Display';
+
+}
+.desc p{
+    opacity: 75%;
+    line-height: 25px;
+    font-size: 15px;
+    height: 125px;
+}
+.button{
+    justify-self: center;
+    align-self: center;
+    width: 146px;
+    height: 48px;
+    background: #fff;
+    color: #E28625;
+
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button:nth-child(1){
+}
+
+.blue{
+    color: #006971;
+}
+
+.green{
+    color: #004140;
+}
+.button:hover{
+    color: #fff;
+    border: #fff 2px solid;
+    background: none;
+}
+/* btns /*
+
+
+
+/* animate */
+.cards:hover .card{
+    cursor: pointer;
+    transform: scale(0.92);
+    filter: blur(1.5px);
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+ .cards .card:hover{
+    transform: scale(1);
+    filter: blur(0px);
+
+
+}
+.card:hover img{
+    transform: translate(150%) scale(1.2);
+    
+    transition: 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+

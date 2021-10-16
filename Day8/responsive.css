@@ -1,0 +1,160 @@
+@media screen and (max-width: 1300px) {
+    .container{
+        width: 81%;
+
+    }
+    svg{
+        transform: scale(0.9);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+ .details-wrapper{
+    width: 90%;
+
+ }
+}
+
+@media screen and (max-width: 950px) {
+    svg{
+        transform: scale(0.8);
+    }
+   }
+   
+
+@media screen and (max-width: 893px) {
+    /* svg{
+        transform: scale(0.7);
+    } */
+    .women-svg{
+        left: -131px;
+    }
+    .container{
+        width: 90%;
+
+    }
+   }
+   @media screen and (max-width: 750px) {
+     .women-svg{
+        transform: scale(0.7);
+    } 
+  
+   }
+   @media screen and (max-width: 620px) {
+    body{
+        margin: 20px 0;
+    }
+    .container{
+        grid-template-columns: 1fr;
+        isolation: isolate;
+        grid-template-rows:  70px 1fr;
+        padding-bottom: 10px;
+
+    }
+    .wrapper{
+        height: 100vh;
+        padding: 2em 2%;
+
+    }
+    img{
+        position: absolute;
+    }
+    .details{
+        padding:  0 20px;
+    }
+    .details-wrapper{
+        width: 100%;
+     }
+     h1{
+         justify-self: center;
+     }
+     .mobile-img{
+         pointer-events: none;
+         display: flex;
+         transform: scale(0.7);
+         top: -22%;
+         left: calc(30vw - 100px)
+     
+     }
+     .cube,.bg{
+        display: none;
+    }
+    .pattern{
+        top: 6.5em;
+        left: 26px;
+        transform: scale(0.9);
+    }
+   }
+
+   @media(max-width: 700px){
+    .svg-women{
+        left: -175px}
+        .bg{
+            left: -37em
+        }
+
+
+   }
+   @media screen and (max-height: 600px) {
+        .wrapper{
+            height: max-content;
+        }
+       
+        
+   }
+   @media screen and (max-width: 400px) {
+    .container{
+        height: 90vh;
+    }
+    .wrapper{
+    
+        padding: 2em 0px;
+
+    }
+    .h3-wrapper h3{
+        width: 100%;
+    }
+
+   
+}
+@media screen and (max-width: 250px) {
+   .mobile-img{
+    transform: scale(0.6);
+    top: -26%;
+    left: calc(30vw - 103px);
+    
+   }
+   
+}
+@media screen and (max-width: 200px) {
+    .mobile-img{
+        transform: scale(0.54);
+        left: calc(30vw - 93px);
+
+
+     
+    }
+    .container{
+        width: 90vw;
+    }
+    
+ }
+ @media screen  and (max-height: 600px){
+    .wrapper{
+    padding: 30px;
+    height: 100vh;
+    }
+    .container{
+        height: fit-content;
+    }
+ }
+ @media screen  and (max-height: 600px){
+    .wrapper{
+        height: max-content;
+    }
+ }
+
+
+
+
+ 

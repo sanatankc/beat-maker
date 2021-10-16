@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    overflow-x: hidden;
+}
+nav{
+    background: #fff;
+    
+    width: 100vw;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-section{
+   width: 100%;
+   display: grid;
+
+   grid-template-columns: repeat(auto-fit,minmax(314px,1fr));
+   gap: 10px;
+}
+.hero-content{
+    display: grid;
+    gap: 30px;
+    margin-top: 30px;
+    /* grid-template-rows: 128px 58px 128px; */
+
+}
+.hero-header{
+    line-height: 64px;
+    width: 445px;
+    font-size: 64px;
+    font-weight: 900;
+    font-size: 64px;
+    text-align: center;
+
+    font-weight: 900;
+}
+.hero-desc{
+    width: 445px;
+    color: #87879D;
+    font-size: 18px;
+    text-align: center;
+}
+.img img{
+    width: 95%;
+    height: auto;
+    /* height: 100%; */
+}
+
+/* btns */
+.hero-content-btns {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 193px;
+    height: 58px;
+    cursor: pointer;
+    font-weight: bold;
+    background: #4D96A9;
+    color: #fff;
+    border-radius: 29px;
+    font-size: 16px;
+}
+.what-btn{
+    width: 139px;
+    background: #855FB1;
+}
+/* slide */
+.slide-1{
+    width: 100vw;
+    height: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-1{
+    position: relative;
+    align-self: flex-end;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: flex;
+    font-weight: bold;
+    color: #87879D;
+    justify-content: center;
+    align-items: center;
+    border: #DDDDE3  1px solid;
+}
+.slider-1::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: -84px;
+
+    background: #DDDDE3;
+    height: 84px;
+}
+/* main */
+.main{
+    margin-top: 60px;
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 40px;
+}
+.photos{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr) );
+    grid-row-gap: 25px;
+}
+ .photos > *{
+    justify-self: center;
+    
+} 
+.main > *{
+} 
+
+.photos img{
+    align-self: end;
+    width: 242px;
+    height: 242px;
+    border-radius: 5px;
+    /* height: 100%; */
+}
+
+.main-content{
+    display: flex;
+    /* width: 50vw; */
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+
+}
+.main-content > h4{
+    text-transform: uppercase;
+    color: #4D96A9;
+    letter-spacing: 4px;
+    line-height: 44px;
+
+}
+.main-content > h1{
+    width: 445px;
+
+}
+.main-content > p{
+
+    width: 540px;
+    opacity: 0.5;
+    line-height: 24px;
+}
+/* hover */
+
+.download-btn:hover{
+    background: #71C0D4;
+    transition: 0.3s;
+}
+.what-btn:hover,.dl-btn:hover{
+    background: #B18BDD;
+    transition: 0.3s;
+
+}
+.second-slide{
+    width: 100vw;
+    height: 130px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.second-absolute{
+    position: relative;
+    align-self: flex-end;
+    width: 56px;
+    height: 56px;
+    top: 30px;
+    z-index: 2;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    font-weight: bold;
+    color: #87879D;
+    justify-content: center;
+    align-items: center;
+    border: #DDDDE3  1px solid
+}
+.second-absolute::after{
+    content: "";
+    position: absolute;
+    width: 1px;
+    top: -84px;
+
+    background: #DDDDE3;
+    height: 84px;
+}
+
+footer{
+    
+    width: 100vw;
+    height: 300px;
+    background: url("./assets/desktop/image-footer.jpg");
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    position: relative;
+    
+}
+.mask{
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    gap: 10px;
+    display: grid;
+    
+    grid-template-columns: repeat( auto-fit,minmax(300px, 1fr));
+    background: #4D96A9;
+    opacity: 0.8;
+    /* top: 0;
+    left: 0; */
+}
+
+.footer-header,.foot-desc,.foo-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+}
+.footer-header h1{
+    width: 80%;
+    font-size: 40px;
+}
+.foot-desc  p{
+    width: 80%;
+}
+.foot-desc{
+    font-weight: 500;
+    line-height: 30px;
+}
+.dl-btn{
+    background: #855FB1;
+}

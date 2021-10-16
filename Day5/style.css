@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+    padding: 0;
+}
+body{
+    font-family: 'Chivo';
+    padding-left: 6em;
+    height: 100vh;
+    background: #121725;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+    color: #fff;
+
+}
+.wrapper{
+    width: 100%;
+    height: 80vh;
+    
+
+}
+.main-page{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+.box{
+    /* border: red 1px solid; */
+    position: relative;
+
+}
+
+
+
+.form {
+    position: absolute;
+    margin-top: 10vh;
+    background: #121725;
+    width: 723px;
+    padding-top: 73px;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 129px 100px 87px  10px 63px;
+    gap: 30px;
+
+}
+.form > *{
+    /* border: red 1px dotted; */
+}
+.dotted-img{
+    position: absolute;
+    top: 70vh;
+    background: url("./assets/desktop/bg-pattern-dots.svg") no-repeat;
+    background-size: cover;
+    left: 80%;
+    width: 150px;
+    height: 103px;
+}
+/* styling input form */
+.title p{
+    font-size: 52px;
+    font-weight: 300;
+    
+    text-transform: uppercase;
+
+}
+
+.desc p{
+    width: 80%;
+    line-height: 28px;
+    color: #C2CBE5;
+    opacity: 0.8;
+    font-size: 18px;
+    font-weight: light;
+    }
+   
+
+    .input-container{
+        background: #2C344B;
+        border-radius: 28px;
+        width: 427px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        
+
+
+    }
+  input{
+    background: #2C344B;
+
+    border-radius: 28px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    font-size: 14px;
+    flex-basis: 61%;
+    color: #fff;
+    position: relative;
+    height: 56px;
+  } 
+  button::before{
+    content: "Oops! Please check your email";
+    display: none;
+    color: red;
+    position: absolute;
+    left: -17em;
+    top: 66px;
+  } 
+  button{
+    width: 162px;
+    height: 46px; 
+    border-radius: 28px;
+    border: none;
+  
+    box-shadow: 0px 2px 4px rgba(84, 230, 175, 0.14);
+    background: #54E6AF;
+    font-size: 14px;
+    font-weight: 600;
+    color: #121725;
+    position: relative;
+  } 
+  .footer{
+      width: 90%;
+  }
+  .footer{
+      display: grid;
+      opacity: 0.4;
+      grid-template-columns: repeat(4,1fr);
+      gap: 5px;
+  }
+  .footer img:nth-child(2){
+      margin-top: 8px;
+  }
+  .host{
+      background: url(./assets/desktop/image-host.jpg) no-repeat;
+      background-size: cover;
+      z-index: -1;
+  }
+  .overlay{
+      display: none;
+  }
+  button:hover{
+      background: #B4FFE2;
+      transition: 0.2s;
+      cursor: pointer;
+  }
+  .error-hide{
+    display: none;
+}
+.d-error{
+
+    display: block;
+    height: 46px;
+    color: red;
+    font-size: 14px!important;
+    width: 100%;
+    align-self: self-end;
+
+}
+.error{
+    display: block;
+    color: red;
+    font-size: 12px;
+width: 79%;
+}
+::placeholder{
+    font-weight: bold;
+}

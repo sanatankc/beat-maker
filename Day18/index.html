@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title"><h1><h1></div>
+        <div class="music-section">
+            <div class="beat">
+                <div class="k-sound sound">
+                    <span>Kick</span>
+                </div>
+                <div class="sn-sound sound">
+                    <span>Snare</span>
+                </div>
+                <div class="h-sound sound">
+                    <span>Hi-Hat</span>
+                </div>
+            </div>
+            <div class="beat-show">
+                <div class="beat-sound-show one">
+                    <div class="circle" data-text="1"></div>
+                    <div class="circle" data-text="4"></div>
+                    <div class="circle" data-text="7"></div>
+                    <div class="circle" data-text="10"></div>
+                    <div class="circle" data-text="13"></div>
+                    <div class="circle" data-text="16"></div>
+                    <div class="circle" data-text="19"></div>
+                    <div class="circle" data-text="22"></div>
+                </div>
+                <div class="beat-sound-show two">
+
+                    <div class="circle" data-text="2"></div>
+                    <div class="circle" data-text="5"></div>
+                    <div class="circle" data-text="8"></div>
+                    <div class="circle" data-text="11"></div>
+                    <div class="circle" data-text="14"></div>
+                    <div class="circle" data-text="17"></div>
+                    <div class="circle" data-text="20"></div>
+                    <div class="circle" data-text="23"></div>
+
+                </div>
+                <div class="beat-sound-show three">
+                    <div class="circle" data-text="3"></div>
+                    <div class="circle" data-text="6"></div>
+                    <div class="circle" data-text="9"></div>
+                    <div class="circle" data-text="12"></div>
+                    <div class="circle" data-text="15"></div>
+                    <div class="circle" data-text="18"></div>
+                    <div class="circle" data-text="21"></div>
+                    <div class="circle" data-text="24"></div>
+                </div>
+
+            </div>
+            <div class="buttons-section">
+                <div class="button-section">
+                    <div class="play"><i class="fa fa-play" aria-hidden="true"></i>
+                    </div>
+                    <div class="stop"><i class="fa fa-stop-circle" aria-hidden="true"></i>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+            <div class="bpm-input"><input type="range" min=30 max=400 value=130></div>
+            <div class="bpm-text" style="text-align: center">BPM - 200</div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

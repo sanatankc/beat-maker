@@ -1,0 +1,12 @@
+.animation{
+    animation: animate 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+@keyframes animate{
+    0%{
+        transform: translateY(30px);
+    }
+    
+    100%{
+        transform: translateY(0px);
+    }
+}

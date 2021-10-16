@@ -1,0 +1,129 @@
+@media(max-width: 1140px){
+   .form{
+       width: 663px;
+   }
+  
+}
+@media(max-width: 860px){
+    .form{
+        width: 603px;
+    }
+    .title p{
+        font-size: 48px;
+    }
+    body{
+        align-items: start; 
+        padding-left: 2em;
+        }
+        .logo{
+            position: relative;
+            top: 30px;
+        }
+    /* button{
+        top: 5%;
+        right: 182px;
+    } */
+ }
+ 
+ @media(max-width:660px){
+    .title p{
+        font-size: 27px;
+        width: 86%;
+    }  
+   
+    button::before{
+        display: none;
+         }
+    .logo-container{
+        width:90vw;
+        display: flex;
+        justify-content: center;
+    }
+    .host{
+        display: none;
+    }
+    .form{
+        opacity: 0.8;
+    }
+    .wrapper{
+        display: none;
+    }
+    body{
+        padding: 0;
+    }
+    
+    .mask{
+        position: absolute;
+        opacity: 0.1;
+        width: 100vw;
+        height: 100vh;
+        background: url("./assets/mobile/image-host.jpg")  no-repeat;
+        background-size: cover;
+        pointer-events: none;
+    }
+ 
+
+    .overlay{
+        padding-top: 48px;
+        display: grid;
+        width: 100vw;
+        grid-template-rows: 129px 240px 157px;
+        gap: 20px;
+        height: 94vh;
+    }
+   
+    .m-desc{
+        display: grid;
+        justify-items: center;
+
+    }
+    .m-title{
+
+        font-size: 5vw;
+        line-height: 38px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: uppercase;
+        width: 80%;
+    }
+   .mob-desc{
+    line-height: 28px;
+    color: #C2CBE5;
+    opacity: 0.8;
+    font-size: 15px;
+    font-weight: 300;
+    width: 80%;
+   }
+   .footer{
+    width: 84%;    
+   }
+   .overlay .footer img{
+       transform: scale(0.9);
+   }
+   .m-input{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-items: center;
+
+       gap: 10px;
+   }
+   input{
+       width: 80%;
+       height: 56px;
+
+       flex-basis: auto;
+   }
+   button{
+    width: 80%;
+    height: 56px;
+   }
+  
+  
+}
+@media (max-width: 450px){
+    .overlay .footer img{
+        transform: scale(1);
+        width: 66px;
+    }
+}
